@@ -1,0 +1,46 @@
+[
+  {
+    "id": "n001",
+    "studentId": "s001",
+    "courseId": "c001",
+    "title": "Porter's Five Forces Summary",
+    "content": "Key takeaways from today's class on competitive analysis framework...",
+    "createdDate": "2026-03-15T10:30:00Z",
+    "updatedDate": "2026-03-15T10:30:00Z"
+  },
+  {
+    "id": "n002",
+    "studentId": "s001",
+    "courseId": "c002",
+    "title": "DCF Valuation Steps",
+    "content": "Steps for building a DCF model: 1. Forecast free cash flows, 2. Determine WACC, 3. Calculate terminal value, 4. Discount to present value",
+    "createdDate": "2026-03-16T15:00:00Z",
+    "updatedDate": "2026-03-16T15:00:00Z"
+  },
+  {
+    "id": "n003",
+    "studentId": "s001",
+    "courseId": "c003",
+    "title": "Digital Marketing Channels",
+    "content": "SEO, SEM, Social Media, Email Marketing, Content Marketing - need to research more on attribution models",
+    "createdDate": "2026-03-17T11:00:00Z",
+    "updatedDate": "2026-03-17T11:00:00Z"
+  },
+  {
+    "id": "n004",
+    "studentId": "s001",
+    "title": "Assignment Deadlines",
+    "content": "Tesla case study due Mar 20, DCF model due Apr 15, Marketing campaign due May 8",
+    "createdDate": "2026-03-10T09:00:00Z",
+    "updatedDate": "2026-03-12T14:00:00Z"
+  },
+  {
+    "id": "n005",
+    "studentId": "s001",
+    "courseId": "c005",
+    "title": "AI Implementation Ideas",
+    "content": "Brainstorming AI use cases for my organization: customer service chatbots, predictive maintenance, demand forecasting",
+    "createdDate": "2026-03-19T16:30:00Z",
+    "updatedDate": "2026-03-19T16:30:00Z"
+  }
+]

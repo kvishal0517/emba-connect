@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c001",
+    "code": "STRAT-601",
+    "title": "Strategic Leadership",
+    "professorId": "p001",
+    "credits": 3,
+    "description": "Advanced corporate strategy and leadership frameworks for executive decision-making."
+  },
+  {
+    "id": "c002",
+    "code": "FIN-502",
+    "title": "Corporate Finance",
+    "professorId": "p002",
+    "credits": 4,
+    "description": "Financial analysis, valuation, capital budgeting, and corporate financial strategy."
+  },
+  {
+    "id": "c003",
+    "code": "MKTG-603",
+    "title": "Digital Marketing Strategy",
+    "professorId": "p003",
+    "credits": 3,
+    "description": "Consumer behavior, brand management, and digital marketing in the modern era."
+  },
+  {
+    "id": "c004",
+    "code": "OPS-504",
+    "title": "Operations Excellence",
+    "professorId": "p004",
+    "credits": 3,
+    "description": "Supply chain management, process optimization, and operational efficiency."
+  },
+  {
+    "id": "c005",
+    "code": "TECH-703",
+    "title": "Leading Digital Innovation",
+    "professorId": "p005",
+    "credits": 3,
+    "description": "Managing technology disruptions and fostering innovation in large organizations."
+  },
+  {
+    "id": "c006",
+    "code": "HR-605",
+    "title": "Organizational Behavior",
+    "professorId": "p006",
+    "credits": 2,
+    "description": "Leadership development, team dynamics, and organizational culture."
+  },
+  {
+    "id": "c007",
+    "code": "ECON-501",
+    "title": "Managerial Economics",
+    "professorId": "p007",
+    "credits": 3,
+    "description": "Microeconomics and macroeconomics for business decision-making."
+  },
+  {
+    "id": "c008",
+    "code": "ENTR-704",
+    "title": "Entrepreneurship & Innovation",
+    "professorId": "p008",
+    "credits": 3,
+    "description": "Building and scaling startups, venture capital, and business model innovation."
+  },
+  {
+    "id": "c009",
+    "code": "ANAL-606",
+    "title": "Business Analytics",
+    "professorId": "p009",
+    "credits": 3,
+    "description": "Data-driven decision making, predictive analytics, and statistical modeling."
+  },
+  {
+    "id": "c010",
+    "code": "LEAD-701",
+    "title": "Executive Leadership",
+    "profilesorId": "p010",
+    "credits": 2,
+    "description": "Leadership styles, executive presence, and strategic thinking for C-suite roles."
+  },
+  {
+    "id": "c011",
+    "code": "STRAT-602",
+    "title": "Competitive Strategy",
+    "professorId": "p011",
+    "credits": 3,
+    "description": "Porter's Five Forces, competitive positioning, and business model innovation."
+  },
+  {
+    "id": "c012",
+    "code": "FIN-503",
+    "title": "Investment Banking & M&A",
+    "professorId": "p012",
+    "credits": 3,
+    "description": "Mergers, acquisitions, corporate valuation, and deal structuring."
+  },
+  {
+    "id": "c013",
+    "code": "MKTG-604",
+    "title": "Brand Management",
+    "professorId": "p013",
+    "credits": 2,
+    "description": "Brand strategy, positioning, and integrated marketing communications."
+  },
+  {
+    "id": "c014",
+    "code": "OPS-505",
+    "title": "Lean Six Sigma",
+    "professorId": "p014",
+    "credits": 2,
+    "description": "Process improvement methodologies and quality management systems."
+  },
+  {
+    "id": "c015",
+    "code": "TECH-704",
+    "title": "Cloud Computing & Enterprise Architecture",
+    "professorId": "p015",
+    "credits": 3,
+    "description": "Cloud strategies, enterprise systems, and digital transformation."
+  }
+]

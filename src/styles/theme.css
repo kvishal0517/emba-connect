@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 217.2 32.6% 7.5%;
+    --foreground: 210 40% 98%;
+
+    --card: 217.2 32.6% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217.2 32.6% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 45 93% 47%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 20%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 45 93% 47%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  /* Ensure all inputs have proper contrast */
+  input,
+  textarea,
+  select {
+    background-color: white !important;
+    color: #1e293b !important; /* slate-900 */
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #94a3b8 !important; /* slate-400 */
+  }
+
+  /* Ensure all buttons have proper contrast */
+  button {
+    color: inherit;
+  }
+
+  /* Ensure proper contrast for disabled states */
+  input:disabled,
+  textarea:disabled,
+  select:disabled,
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  /* Focus states with high contrast */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: 2px solid #3b82f6 !important; /* blue-500 */
+    outline-offset: 2px;
+  }
+
+  /* Ensure options in select have proper contrast */
+  option {
+    background-color: white !important;
+    color: #1e293b !important; /* slate-900 */
+  }
+}
+
+/* High contrast component overrides */
+@layer components {
+  /* Cards with proper contrast */
+  .card {
+    background-color: white;
+    color: #1e293b; /* slate-900 */
+  }
+
+  /* Badges with proper contrast */
+  .badge {
+    font-weight: 600;
+  }
+
+  /* Ensure all headings are readable */
+  h1, h2, h3, h4, h5, h6 {
+    color: #0f172a; /* slate-950 for maximum contrast */
+    font-weight: 700;
+  }
+
+  /* Proper contrast for links */
+  a {
+    color: #1e40af; /* blue-800 for proper contrast */
+  }
+
+  a:hover {
+    color: #1e3a8a; /* blue-900 */
+  }
+
+  /* Accessible focus indicator */
+  *:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+}

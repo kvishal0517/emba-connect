@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ann001",
+    "title": "Mid-Term Examination Schedule Released",
+    "message": "The mid-term examination schedule for all courses has been released. Please check the Academic Calendar section for detailed timings and venues. All exams will be conducted online via our secure proctoring platform.",
+    "priority": "high",
+    "date": "2026-03-10",
+    "author": "Academic Office"
+  },
+  {
+    "id": "ann002",
+    "title": "Guest Lecture: Digital Transformation in Banking",
+    "message": "Join us for an exclusive session with Mr. Aditya Puri, former MD & CEO of HDFC Bank, discussing digital transformation strategies in the banking sector. Friday, March 20, 2026 at 6:00 PM IST.",
+    "priority": "high",
+    "date": "2026-03-08",
+    "author": "Prof. Arun Patel"
+  },
+  {
+    "id": "ann003",
+    "title": "Library Resources Extended",
+    "message": "We're pleased to announce that digital library access has been extended to include Harvard Business Review, Financial Times, and The Economist archives. Access credentials have been emailed to all students.",
+    "priority": "medium",
+    "date": "2026-03-05",
+    "author": "Library Services"
+  },
+  {
+    "id": "ann004",
+    "title": "Alumni Networking Event",
+    "message": "EMBA Connect Alumni Networking Event scheduled for March 28, 2026. This is a great opportunity to network with successful alumni from various industries. Registration link sent via email.",
+    "priority": "medium",
+    "date": "2026-03-03",
+    "author": "Alumni Relations"
+  },
+  {
+    "id": "ann005",
+    "title": "Career Services Workshop",
+    "message": "Upcoming workshop on 'Executive Resume Writing and LinkedIn Optimization' on March 22, 2026 at 4:00 PM IST. Limited seats available. RSVP required.",
+    "priority": "medium",
+    "date": "2026-03-02",
+    "author": "Career Services"
+  },
+  {
+    "id": "ann006",
+    "title": "Spring Break Schedule",
+    "message": "Spring break will be from April 11-18, 2026. No classes or office hours during this period. Emergency contact information available on the student portal.",
+    "priority": "high",
+    "date": "2026-02-28",
+    "author": "Academic Office"
+  },
+  {
+    "id": "ann007",
+    "title": "International Study Tour Applications Open",
+    "message": "Applications are now open for the International Study Tour to Silicon Valley scheduled for May 2026. Visit leading tech companies including Google, Apple, and Tesla. Application deadline: March 25, 2026.",
+    "priority": "high",
+    "date": "2026-02-25",
+    "author": "International Programs"
+  },
+  {
+    "id": "ann008",
+    "title": "New AI Assistant Feature",
+    "message": "We've launched an AI-powered academic assistant to help you with course materials, assignment guidance, and general queries. Access it from the left sidebar menu.",
+    "priority": "medium",
+    "date": "2026-02-22",
+    "author": "IT Services"
+  },
+  {
+    "id": "ann009",
+    "title": "Entrepreneurship Competition 2026",
+    "message": "Annual EMBA Entrepreneurship Competition opens for registrations. Win prizes worth ₹5 lakhs and mentorship from top VCs. Pitch your startup idea by April 5, 2026.",
+    "priority": "medium",
+    "date": "2026-02-20",
+    "author": "Entrepreneurship Cell"
+  },
+  {
+    "id": "ann010",
+    "title": "Updated Attendance Policy",
+    "message": "Please note the updated attendance policy: Minimum 75% attendance required for each course. Attendance is tracked automatically for all online sessions.",
+    "priority": "high",
+    "date": "2026-02-15",
+    "author": "Academic Office"
+  },
+  {
+    "id": "ann011",
+    "title": "Campus Placement Season Begins",
+    "message": "Campus placement season for summer internships begins next week. Top companies including McKinsey, Goldman Sachs, and Google are participating. Update your resumes in the portal.",
+    "priority": "high",
+    "date": "2026-02-12",
+    "author": "Placement Cell"
+  },
+  {
+    "id": "ann012",
+    "title": "Finance Club Case Competition",
+    "message": "The Finance Club is organizing a case competition on 'Sustainable Finance and ESG Investing'. Register your team by March 15, 2026. Winner gets Amazon vouchers worth ₹25,000.",
+    "priority": "low",
+    "date": "2026-02-10",
+    "author": "Finance Club"
+  },
+  {
+    "id": "ann013",
+    "title": "Mental Health and Wellness Program",
+    "message": "Free counseling sessions and wellness workshops available for all students. Confidential one-on-one sessions with certified counselors. Book your appointment through the student portal.",
+    "priority": "medium",
+    "date": "2026-02-08",
+    "author": "Student Wellness"
+  },
+  {
+    "id": "ann014",
+    "title": "Technical Workshop: Data Analytics",
+    "message": "Learn Python, R, and Tableau in our upcoming Data Analytics Workshop series starting March 16, 2026. No prior coding experience required. Free for all EMBA students.",
+    "priority": "medium",
+    "date": "2026-02-05",
+    "author": "Skill Development"
+  },
+  {
+    "id": "ann015",
+    "title": "Annual Leadership Summit",
+    "message": "Save the date: Annual EMBA Leadership Summit on June 15-16, 2026. Theme: 'Leading in the Age of AI'. Featuring CEOs and thought leaders from Fortune 500 companies.",
+    "priority": "high",
+    "date": "2026-02-01",
+    "author": "Events Committee"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "p001",
+    "userId": "u101",
+    "name": "Dr. Rajesh Sharma",
+    "department": "Strategy",
+    "bio": "Professor of Strategic Management with 15 years industry experience in consulting and corporate leadership.",
+    "email": "rajesh.sharma@iitr.ac.in",
+    "officeHours": "Monday 3:00 PM - 5:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/rajeshsharma",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p002",
+    "userId": "u102",
+    "name": "Prof. Anita Desai",
+    "department": "Finance",
+    "bio": "Former CFO with expertise in corporate finance, investment banking, and financial risk management.",
+    "email": "anita.desai@iitr.ac.in",
+    "officeHours": "Wednesday 10:00 AM - 12:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/anitadesai",
+    "avatar": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p003",
+    "userId": "u103",
+    "name": "Dr. Sunil Kumar",
+    "department": "Marketing",
+    "bio": "Digital marketing expert specializing in consumer behavior and brand management.",
+    "email": "sunil.kumar@iitr.ac.in",
+    "officeHours": "Tuesday 2:00 PM - 4:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/sunilkumar",
+    "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p004",
+    "userId": "u104",
+    "name": "Prof. Meena Iyer",
+    "department": "Operations",
+    "bio": "Operations and supply chain management specialist with manufacturing and logistics background.",
+    "email": "meena.iyer@iitr.ac.in",
+    "officeHours": "Thursday 1:00 PM - 3:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/meenaiyer",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p005",
+    "userId": "u105",
+    "name": "Dr. Arun Patel",
+    "department": "Technology",
+    "bio": "Tech entrepreneur and professor of digital innovation with focus on AI and machine learning.",
+    "email": "arun.patel@iitr.ac.in",
+    "officeHours": "Friday 4:00 PM - 6:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/arunpatel",
+    "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p006",
+    "userId": "u106",
+    "name": "Prof. Kavita Reddy",
+    "department": "Human Resources",
+    "bio": "Organizational behavior and HR management expert with focus on leadership development.",
+    "email": "kavita.reddy@iitr.ac.in",
+    "officeHours": "Monday 11:00 AM - 1:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/kavitareddy",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p007",
+    "userId": "u107",
+    "name": "Dr. Vikram Malhotra",
+    "department": "Economics",
+    "bio": "Macroeconomics and international trade specialist with policy advisory experience.",
+    "email": "vikram.malhotra@iitr.ac.in",
+    "officeHours": "Wednesday 3:00 PM - 5:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/vikrammalhotra",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p008",
+    "userId": "u108",
+    "name": "Prof. Lakshmi Venkatesh",
+    "department": "Entrepreneurship",
+    "bio": "Serial entrepreneur and startup advisor specializing in venture capital and business scaling.",
+    "email": "lakshmi.venkatesh@iitr.ac.in",
+    "officeHours": "Tuesday 5:00 PM - 7:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/lakshmivenkatesh",
+    "avatar": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p009",
+    "userId": "u109",
+    "name": "Dr. Ramesh Gupta",
+    "department": "Analytics",
+    "bio": "Data science and business analytics expert with focus on predictive modeling.",
+    "email": "ramesh.gupta@iitr.ac.in",
+    "officeHours": "Thursday 10:00 AM - 12:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/rameshgupta",
+    "avatar": "https://images.unsplash.com/photo-1542178243-bc20204b769f?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p010",
+    "userId": "u110",
+    "name": "Prof. Nisha Kapoor",
+    "department": "Leadership",
+    "bio": "Executive coach and leadership development specialist with Fortune 500 experience.",
+    "email": "nisha.kapoor@iitr.ac.in",
+    "officeHours": "Friday 2:00 PM - 4:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/nishakapoor",
+    "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p011",
+    "userId": "u111",
+    "name": "Dr. Ajay Singh",
+    "department": "Strategy",
+    "bio": "Competitive strategy and business model innovation expert with consulting background.",
+    "email": "ajay.singh@iitr.ac.in",
+    "officeHours": "Monday 2:00 PM - 4:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/ajaysingh",
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p012",
+    "userId": "u112",
+    "name": "Prof. Pooja Menon",
+    "department": "Finance",
+    "bio": "Corporate valuation and M&A specialist with investment banking experience.",
+    "email": "pooja.menon@iitr.ac.in",
+    "officeHours": "Wednesday 11:00 AM - 1:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/poojamenon",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p013",
+    "userId": "u113",
+    "name": "Dr. Karan Khanna",
+    "department": "Marketing",
+    "bio": "Brand strategy and integrated marketing communications expert.",
+    "email": "karan.khanna@iitr.ac.in",
+    "officeHours": "Tuesday 3:00 PM - 5:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/karankhanna",
+    "avatar": "https://images.unsplash.com/photo-1463453091185-61582044d556?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p014",
+    "userId": "u114",
+    "name": "Prof. Sunita Bose",
+    "department": "Operations",
+    "bio": "Lean manufacturing and Six Sigma expert with automotive industry experience.",
+    "email": "sunita.bose@iitr.ac.in",
+    "officeHours": "Thursday 4:00 PM - 6:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/sunitabose",
+    "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p015",
+    "userId": "u115",
+    "name": "Dr. Nitin Aggarwal",
+    "department": "Technology",
+    "bio": "Cloud computing and enterprise architecture specialist with tech startup experience.",
+    "email": "nitin.aggarwal@iitr.ac.in",
+    "officeHours": "Friday 10:00 AM - 12:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/nitinaggarwal",
+    "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p016",
+    "userId": "u116",
+    "name": "Prof. Asha Verma",
+    "department": "Human Resources",
+    "bio": "Talent management and organizational design specialist with HR consulting experience.",
+    "email": "asha.verma@iitr.ac.in",
+    "officeHours": "Monday 1:00 PM - 3:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/ashaverma",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p017",
+    "userId": "u117",
+    "name": "Dr. Manoj Tiwari",
+    "department": "Economics",
+    "bio": "Development economics and public policy expert with government advisory roles.",
+    "email": "manoj.tiwari@iitr.ac.in",
+    "officeHours": "Wednesday 2:00 PM - 4:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/manojtiwari",
+    "avatar": "https://images.unsplash.com/photo-1507081323647-4d250478b919?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p018",
+    "userId": "u118",
+    "name": "Prof. Divya Krishnan",
+    "department": "Entrepreneurship",
+    "bio": "Social entrepreneurship and impact investing expert with NGO experience.",
+    "email": "divya.krishnan@iitr.ac.in",
+    "officeHours": "Tuesday 11:00 AM - 1:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/divyakrishnan",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p019",
+    "userId": "u119",
+    "name": "Dr. Sandeep Rao",
+    "department": "Analytics",
+    "bio": "Machine learning and AI applications in business with fintech experience.",
+    "email": "sandeep.rao@iitr.ac.in",
+    "officeHours": "Thursday 3:00 PM - 5:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/sandeeprao",
+    "avatar": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?fit=crop&w=150&h=150"
+  },
+  {
+    "id": "p020",
+    "userId": "u120",
+    "name": "Prof. Rekha Nambiar",
+    "department": "Leadership",
+    "bio": "Change management and executive leadership specialist with pharma industry background.",
+    "email": "rekha.nambiar@iitr.ac.in",
+    "officeHours": "Friday 1:00 PM - 3:00 PM IST",
+    "linkedIn": "https://linkedin.com/in/rekhanambiar",
+    "avatar": "https://images.unsplash.com/photo-1485893226355-9a1c32a0b818?fit=crop&w=150&h=150"
+  }
+]
