@@ -1,0 +1,152 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String      @id @default(cuid())
+  email        String      @unique
+  passwordHash String
+  name         String
+  role         String      // "SUPER_ADMIN", "ADMIN", "PROFESSOR", "STUDENT"
+  status       String      // "PENDING", "APPROVED"
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  // Relationships
+  uploadedSyllabi   Syllabus[]       @relation("ProfessorSyllabi")
+  createdAssignments Assignment[]     @relation("ProfessorAssignments")
+  submissions       Submission[]     @relation("StudentSubmissions")
+  gradedSubmissions Submission[]     @relation("ProfessorGrades")
+  scheduledClasses  ScheduledClass[] @relation("ProfessorClasses")
+  attendances       Attendance[]     @relation("StudentAttendance")
+  notifications     Notification[]
+
+  // Course management relations
+  taughtCourses     Course[]         @relation("ProfessorCourses")
+  enrollments       Enrollment[]     @relation("StudentEnrollments")
+}
+
+model Course {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String?
+  term        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Professor teaching the course
+  professorId String?
+  professor   User?    @relation("ProfessorCourses", fields: [professorId], references: [id], onDelete: SetNull)
+
+  // Students enrolled in the course
+  enrollments Enrollment[]
+
+  // Content related to this course
+  syllabi     Syllabus[]
+  assignments Assignment[]
+  classes     ScheduledClass[]
+}
+
+model Enrollment {
+  id         String   @id @default(cuid())
+  courseId   String
+  course     Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  studentId  String
+  student    User     @relation("StudentEnrollments", fields: [studentId], references: [id], onDelete: Cascade)
+  enrolledAt DateTime @default(now())
+
+  @@unique([courseId, studentId])
+}
+
+model Syllabus {
+  id           String   @id @default(cuid())
+  title        String
+  description  String?
+  fileName     String
+  fileType     String
+  fileData     Bytes    // Stores PDF/Docx blob in database
+  uploadedById String
+  uploadedBy   User     @relation("ProfessorSyllabi", fields: [uploadedById], references: [id], onDelete: Cascade)
+  courseId     String
+  course       Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+}
+
+model Assignment {
+  id           String       @id @default(cuid())
+  title        String
+  description  String?
+  dueDate      DateTime
+  createdById  String
+  createdBy    User         @relation("ProfessorAssignments", fields: [createdById], references: [id], onDelete: Cascade)
+  courseId     String
+  course       Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdAt    DateTime     @default(now())
+  submissions  Submission[]
+}
+
+model Submission {
+  id           String     @id @default(cuid())
+  assignmentId String
+  assignment   Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  studentId    String
+  student      User       @relation("StudentSubmissions", fields: [studentId], references: [id], onDelete: Cascade)
+  fileName     String
+  fileType     String
+  fileData     Bytes      // Student upload blob sheet
+  submittedAt  DateTime   @default(now())
+  grade        String?    // Letter grade or percentage mark
+  feedback     String?
+  gradedById   String?
+  gradedBy     User?      @relation("ProfessorGrades", fields: [gradedById], references: [id], onDelete: SetNull)
+  gradedAt     DateTime?
+}
+
+model ScheduledClass {
+  id           String       @id @default(cuid())
+  topic        String
+  description  String?
+  startTime    DateTime
+  duration     Int          // in minutes
+  zoomLink     String
+  scheduledById String
+  scheduledBy   User        @relation("ProfessorClasses", fields: [scheduledById], references: [id], onDelete: Cascade)
+  courseId     String
+  course       Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdAt    DateTime     @default(now())
+  attendances  Attendance[]
+}
+
+model Attendance {
+  id        String         @id @default(cuid())
+  classId   String
+  class     ScheduledClass @relation(fields: [classId], references: [id], onDelete: Cascade)
+  studentId String
+  student   User           @relation("StudentAttendance", fields: [studentId], references: [id], onDelete: Cascade)
+  markedAt  DateTime       @default(now())
+  status    String         // "PRESENT", "ABSENT"
+  
+  @@unique([classId, studentId])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model SystemSetting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+}
