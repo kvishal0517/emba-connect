@@ -115,7 +115,7 @@ test.describe('EMBA Connect E2E Lifecycle Test', () => {
   test('1. Super Admin CRUD and Student Registration Signup', async ({ page }) => {
     // 1.1. Navigate to landing page
     await page.goto('/');
-    await expect(page.locator('text=Academic management, simplified.')).toBeVisible();
+    await expect(page.locator('text=Shaping the Future of')).toBeVisible();
 
     // 1.2. Login as Super Admin
     await page.goto('/login');

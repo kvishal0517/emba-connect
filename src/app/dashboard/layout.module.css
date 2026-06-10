@@ -18,32 +18,42 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 54px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: var(--font-size-base);
-  letter-spacing: -0.02em;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
-.logoDot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--accent-blue);
-  border-radius: var(--radius-pill);
+.logoSeal {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px double var(--accent-gold);
+  background-color: #0f172a;
+  color: var(--accent-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  font-weight: 800;
+  font-family: var(--font-serif);
+  box-shadow: 0 1px 4px rgba(197, 160, 89, 0.2);
 }
 
 .rightNav {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -52,28 +62,23 @@
 }
 
 .profileButton {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(197, 160, 89, 0.04);
   border: 1px solid var(--border-color);
   cursor: pointer;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: var(--radius-pill);
-  font-size: var(--font-size-xs);
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 8px;
   color: var(--text-primary);
-  transition: background-color 0.2s ease;
-}
-
-@media (prefers-color-scheme: dark) {
-  .profileButton {
-    background-color: rgba(255, 255, 255, 0.04);
-  }
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
 }
 
 .profileButton:hover {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(197, 160, 89, 0.08);
+  border-color: var(--accent-gold);
 }
 
 .profileDropdown {
@@ -81,17 +86,17 @@
   top: 100%;
   right: 0;
   margin-top: 8px;
-  width: 220px;
+  width: 230px;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
-  padding: 8px;
+  padding: 10px;
   z-index: 500;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  animation: dropdownFade 0.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  gap: 6px;
+  animation: dropdownFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes dropdownFade {
@@ -106,8 +111,8 @@
 }
 
 .dropdownName {
-  font-size: var(--font-size-sm);
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--text-primary);
   display: block;
 }
@@ -125,8 +130,8 @@
   border: none;
   padding: 8px 12px;
   border-radius: var(--radius-sm);
-  font-size: var(--font-size-xs);
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   color: var(--accent-red);
   cursor: pointer;
   display: flex;
@@ -138,7 +143,7 @@
 }
 
 .logoutButton:hover {
-  background-color: rgba(255, 59, 48, 0.08);
+  background-color: rgba(239, 68, 68, 0.08);
 }
 
 .main {
@@ -151,15 +156,31 @@
 
 .badge {
   display: inline-block;
-  padding: 2px 8px;
+  padding: 3px 10px;
   font-size: 9px;
   font-weight: 700;
   border-radius: var(--radius-pill);
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
 
-.badge_super_admin { background-color: rgba(52, 199, 89, 0.12); color: var(--accent-green); border: 1px solid rgba(52, 199, 89, 0.2); }
-.badge_admin { background-color: rgba(0, 113, 227, 0.12); color: var(--accent-blue); border: 1px solid rgba(0, 113, 227, 0.2); }
-.badge_professor { background-color: rgba(175, 82, 222, 0.12); color: #af52de; border: 1px solid rgba(175, 82, 222, 0.2); }
-.badge_student { background-color: rgba(255, 149, 0, 0.12); color: var(--accent-yellow); border: 1px solid rgba(255, 149, 0, 0.2); }
+.badge_super_admin { 
+  background-color: rgba(15, 23, 42, 0.06); 
+  color: var(--text-primary); 
+  border: 1px solid var(--text-secondary); 
+}
+.badge_admin { 
+  background-color: rgba(15, 23, 42, 0.06); 
+  color: var(--text-primary); 
+  border: 1px solid var(--text-secondary); 
+}
+.badge_professor { 
+  background-color: rgba(197, 160, 89, 0.08); 
+  color: var(--accent-gold); 
+  border: 1px solid rgba(197, 160, 89, 0.25); 
+}
+.badge_student { 
+  background-color: rgba(197, 160, 89, 0.08); 
+  color: var(--accent-gold); 
+  border: 1px solid rgba(197, 160, 89, 0.25); 
+}

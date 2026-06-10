@@ -1,10 +1,11 @@
 .card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 24px;
+  border-radius: var(--radius-md);
+  padding: 28px;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+  position: relative;
 }
 
 .hoverable {
@@ -12,11 +13,11 @@
 }
 
 .hoverable:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(0, 113, 227, 0.2);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(197, 160, 89, 0.3);
 }
 
 .hoverable:active {
-  transform: translateY(-1px) scale(0.99);
+  transform: translateY(-2px) scale(0.995);
 }

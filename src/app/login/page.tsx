@@ -60,9 +60,25 @@ export default function Login() {
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh', justifyContent: 'center', alignItems: 'center', backgroundColor: 'var(--bg-page)', padding: '24px', flexDirection: 'column', gap: '24px' }}>
-      <div style={{ textAlign: 'center' }}>
-        <h1 style={{ fontSize: '32px', fontWeight: '800', letterSpacing: '-0.04em', color: 'var(--text-primary)', marginBottom: '4px' }}>EMBA Connect</h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>Academic management system</p>
+      <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+        <div style={{
+          width: '38px',
+          height: '38px',
+          borderRadius: '50%',
+          border: '2px double var(--accent-gold)',
+          backgroundColor: '#0f172a',
+          color: 'var(--accent-gold)',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontSize: '13px',
+          fontWeight: '800',
+          fontFamily: 'var(--font-serif)',
+          boxShadow: '0 2px 8px rgba(197, 160, 89, 0.25)',
+          marginBottom: '4px'
+        }}>EC</div>
+        <h1 style={{ fontSize: '32px', fontWeight: '500', letterSpacing: '-0.02em', color: 'var(--text-primary)', marginBottom: '2px', fontFamily: 'var(--font-serif)' }}>EMBA Connect</h1>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>Executive Academy Management Console</p>
       </div>
 
       <Card className="animate-fade-in" style={{ maxWidth: '400px', width: '100%', padding: '32px' }}>

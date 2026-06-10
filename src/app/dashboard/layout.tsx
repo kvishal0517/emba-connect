@@ -111,7 +111,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <header className={styles.header}>
         <div className={styles.nav}>
           <div className={styles.logo}>
-            <span className={styles.logoDot} />
+            <span className={styles.logoSeal}>EC</span>
             EMBA Connect
           </div>
           <div className={styles.rightNav}>
