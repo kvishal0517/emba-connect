@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BookOpen, Users, ShieldCheck, GraduationCap } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -23,22 +24,78 @@ export default function Home() {
       </header>
 
       <main className="animate-fade-in">
-        <section className={styles.hero}>
-          <span className={styles.badge}>Executive Admissions & Leadership Portal</span>
-          <h1 className={styles.title}>
-            Shaping the Future of <br />
-            <span className={styles.titleEmphasis}>Global Leadership</span>
-          </h1>
-          <p className={styles.subtitle}>
-            A prestigious, unified console custom-tailored for Executive MBA candidates, distinguished faculty, and program administrators. Seamlessly manage course curricula, live lectures, and academic performance.
-          </p>
-          <div className={styles.cta}>
-            <Link href="/login" className={styles.primaryBtn}>
-              Enter Portal Console
-            </Link>
-            <Link href="/signup" className={styles.secondaryBtn}>
-              Request New Registration
-            </Link>
+        <section className={styles.heroSplit}>
+          <div className={styles.heroLeft}>
+            <span className={styles.badge}>Admissions Open &bull; Academic Year 2026-27</span>
+            <h1 className={styles.title}>
+              Shaping the Future of <br />
+              <span className={styles.titleEmphasis}>Global Leadership</span>
+            </h1>
+            <p className={styles.subtitle}>
+              An elite Executive MBA platform custom-tailored for future business leaders, distinguished faculty, and administrators. Seamlessly coordinate course syllabi, live lectures, assignments, and grades.
+            </p>
+            <div className={styles.cta}>
+              <Link href="/login" className={styles.primaryBtn}>
+                Enter Portal Console
+              </Link>
+              <Link href="/signup" className={styles.secondaryBtn}>
+                Request Registration
+              </Link>
+            </div>
+          </div>
+          <div className={styles.heroRight}>
+            <div className={styles.imageCard}>
+              <Image 
+                src="/b_school_campus.png" 
+                alt="Executive Business School Campus" 
+                width={500} 
+                height={375} 
+                priority 
+                className={styles.campusImage} 
+              />
+              <div className={styles.imageOverlay}>
+                <span className={styles.overlayText}>EC Executive Education</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.highlightsSection}>
+          <div className={styles.highlightsHeader}>
+            <span className={styles.liveIndicator}>
+              <span className={styles.pulseDot}></span>
+              Institutional Announcements
+            </span>
+          </div>
+          <div className={styles.highlightsGrid}>
+            <div className={styles.highlightItem}>
+              <span className={styles.highlightTag}>Admissions</span>
+              <p className={styles.highlightText}>
+                Executive MBA Admissions for the Autumn 2026 Cohort are open. Register to request portal credentials.
+              </p>
+              <span className={styles.highlightDate}>June 10, 2026</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.highlightTag}>Rankings</span>
+              <p className={styles.highlightText}>
+                EC Business School ranked #1 for Executive Leadership Development in the 2026 National Surveys.
+              </p>
+              <span className={styles.highlightDate}>June 08, 2026</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.highlightTag}>Curriculum</span>
+              <p className={styles.highlightText}>
+                New Executive Elective Course: 'AI-Driven Strategic Decisions' introduced for the incoming term.
+              </p>
+              <span className={styles.highlightDate}>June 05, 2026</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.highlightTag}>Accreditation</span>
+              <p className={styles.highlightText}>
+                Successfully renewed international MBA accreditation, placing EC in the top tier globally.
+              </p>
+              <span className={styles.highlightDate}>May 28, 2026</span>
+            </div>
           </div>
         </section>
 
